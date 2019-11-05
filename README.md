@@ -36,11 +36,11 @@ MakeResult is pure function with incaplsulated logic. It require one object as p
     custom2: bool,
 }
 ```
-`MakeResult` function create new instance of `ResultMaker` class and return result of running `make` method.
-If `custom1` or `custom2` keys are true, `MakeResult` add new decorator function to decorators array.
-`ResultMaker` is class, it accepts same object as `MakeResult` as first parameter and array of decorators.
-`MakeResult` check `a`, `b` & `c` keys in accepted object and set predefined function to return calculated result.
-If there are any decorator in `decorators` array coming from second argument - `MakeResult` run this decorator.
+`MakeResult` function create new instance of `ResultMaker` class and return result of running `make` method.<br />
+If `custom1` or `custom2` keys are true, `MakeResult` add new decorator function to decorators array.<br />
+`ResultMaker` is class, it accepts same object as `MakeResult` as first parameter and array of decorators.<br />
+`MakeResult` check `a`, `b` & `c` keys in accepted object and set predefined function to return calculated result.<br />
+If there are any decorator in `decorators` array coming from second argument - `MakeResult` run this decorator.<br />
 
 This approach gives me good scalability - I can add as many decorators as I want.
 
